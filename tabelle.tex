@@ -35,54 +35,17 @@
 %           & #4 & {}\mapsto{} & #5
 %  \end{array}}
 \input{../Mod_base/tcolorboxgest}
-\input{../Mod_base/glossario}
-\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 
-\makeglossaries
 
 %\setglossarystyle{tree}
 
-\opt{prima}{
-\loadglsentries{glossario/glossari1}
-\loadglsentries[altacronym]{glossario/acronimi1}
-\loadglsentries{glossario/simboli1}
-}
-\opt{secondo}{
-%\setglossarystyle{altlist}
-\loadglsentries{glossario/glossari2}
-%\setacronymstyle{long-short}
-\loadglsentries[acronym]{glossario/acronimi1}
-\loadglsentries[acronym]{glossario/simboli1}
-}
-\opt{terzo}{
-\loadglsentries{glossario/glossari3}
-\loadglsentries[altacronym]{glossario/acronimi1}
-\loadglsentries[acronym]{glossario/simboli1}
-}
-\opt{quarto}{
-\loadglsentries{glossario/glossari4}
-\loadglsentries[altacronym]{glossario/acronimi1}
-\loadglsentries[acronym]{glossario/simboli1}
-}
-\opt{glossario}{
-\setacronymstyle{long-short}
-%\setglossarystyle{super}
-\loadglsentries[altacronym]{glossario/acronimi1}
-\loadglsentries[acronym]{glossario/simboli1}
 
-\setglossarystyle{altlistgroup}
-\loadglsentries{glossario/glossari1}
-\loadglsentries{glossario/glossari2}
-\loadglsentries{glossario/glossari3}
-\loadglsentries{glossario/glossari4}
-
-}
 %Simboli logici
 \usepackage{gn-logic14}
-\newcommand{\tabincludegraphics}[2][]{%
-  $\vcenter{\hbox{\includegraphics[#1]{#2}}}$}
-\newcommand{\tabincludestandalone}[2][]{%
-	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
+%\newcommand{\tabincludegraphics}[2][]{%
+%  $\vcenter{\hbox{\includegraphics[#1]{#2}}}$}
+%\newcommand{\tabincludestandalone}[2][]{%
+%	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
 
 
 
@@ -120,6 +83,7 @@
 \input{../Mod_base/indice}
 \listfiles
 \input{../Mod_base/utili}
+\usepackage{qrcode}
  \begin{document}
 \frontmatter
 \begin{titlepage}
@@ -139,13 +103,8 @@
 		% Title
 		\HRule \\[0.4cm]
 		{ \huge \bfseries Appunti di matematica}\\[0.4cm]
-		\opt{prima}{{\bfseries PRIMO}\\[0.4cm]}
-		\opt{secondo}{{\bfseries SECONDO}\\[0.4cm]}
-		\opt{terzo}{{\bfseries TERZO}\\[0.4cm]}
-		\opt{quarto}{{\bfseries QUARTO}\\[0.4cm]}
-		\opt{extra}{{\bfseries EXTRA}\\[0.4cm]}
-		\opt{grafici}{{\bfseries GRAFICI}\\[0.4cm]}
-	\opt{glossario}{{\bfseries GLOSSARIO}\\[0.4cm]}
+{\bfseries PRIMO}\\[0.4cm]
+
 		\HRule \\[1.5cm]
 		\vfill
 		
@@ -180,14 +139,8 @@
 \tcblistof[\section*]{cthm}{Contro esempi}
 %}
 \mainmatter%
-\opt{prima}{\input{primo/prima}}
-\opt{secondo}{\input{secondo/secondo}}
-\opt{terzo}{\input{terzo/terzo}}
-\opt{quarto}{\input{quarto/quarto}}
-\opt{extra}{\input{extra/extra}}
-\opt{grafici}{\input{grafici/grafici}}
-\glsaddall
-\printglossaries
+\input{primo/prima}
+
 \addcontentsline{toc}{chapter}{\indexname}
 \input{../Mod_base/MezziUsati}
 \printindex

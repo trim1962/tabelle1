@@ -24,3 +24,5 @@
 *.gz
 *.thm
 *.toc
+*.out
+*.tdo
