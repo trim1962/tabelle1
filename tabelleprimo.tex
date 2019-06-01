@@ -7,7 +7,6 @@
 %\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
 \usepackage[big]{layaureo}
 \input{../Mod_base/grafica}
-%\input{../Mod_base/rifIndici}
 \input{../Mod_base/stand_class}
 \usepackage{qrcode}
 \input{../Mod_base/matematica}
@@ -17,14 +16,7 @@
 \newcolumntype{L}{>{$\displaystyle}l<{$}}
 \newcolumntype{C}{>{$\displaystyle}c<{$}}
 \newcolumntype{R}{>{$\displaystyle}r<{$}}
-%\newcolumntype{T}{>{\centering\arraybackslash}p{1em}} 
-%\newcolumntype{W}{>{\sffamily\Large $}c<{$}}
-%%\newcolumntype{N}[1]{>{\centering\rule[-1mm]{0pt}{4.75mm}}m{#1}}
-%\newcolumntype{M}[1]{>{\centering}p{#1}}
-%\newcommand\pilH{\rule{0pt}{2.5ex}}
-%\newcommand\pilD{\rule[-1ex]{0pt}{0pt}}
-%\newlength{\gnat}
-%\newlength{\gnam}
+
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \input{../Mod_base/pagina}
@@ -48,14 +40,14 @@
 \hypersetup{%
 	pdfencoding=auto,
 	urlcolor={blue},
-	pdftitle={Appunti matematica terzo manutenzione},
-	pdfsubject={terzo},
+	pdftitle={Appunti matematica primo},
+	pdfsubject={primo},
 	pdfstartview={FitH},
 	pdfpagemode={UseOutlines},
 	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
 	pdflang={it},
 	pdfmetalang={it},
-	pdfkeywords={goniometria, trigoniometria, numeri complessi},
+	pdfkeywords={Numeri, monomi, polinomi},
 	pdfcopyright={Copyright (C) 2019, Claudio Duchi},
 	pdfcontacturl={http://breviariomatematico.altervista.org},
 	pdfcontactpostcode={},
@@ -148,7 +140,7 @@
 }
 \listoftodos
 \mainmatter%
-
+\input{compilaDUE}
 \addcontentsline{toc}{chapter}{\indexname}
 \input{../Mod_base/MezziUsati}
 \printindex
