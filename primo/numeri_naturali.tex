@@ -212,7 +212,7 @@ La scomposizione di un numero in fattori è unica. Non vi possono essere due sco
 	\label{fig:AlberoBinario6}
 \end{figure}%
 Un altro metodo per scomporre un numero in fattori  è quello di dividere ripetutamente  il numero da scomporre per dei primi, terminando quando il quoziente ottenuto è uno.
-\begin{esempiot}{}{}
+\begin{esempiot}{Scomposizione numero}{}
 Supponiamo di voler scomporre il \num{120}. 
 \end{esempiot}
 Procediamo come segue
@@ -261,7 +261,7 @@ $a$&$b$&$a/b$&$r$\\
     12&3&4&0
     \end{array} 
     \]
- \begin{esempiot}{}{}
+ \begin{esempiot}{MCD}{}
     Supponiamo di voler calcolare il $\mcd$ fra \numlist{40;12}. 
  \end{esempiot}   
     Organizziamo  i calcoli come nella tabella seguente. Inizio dividendo \num{40} per \num{12}. Ottengo come quoziente  \num{3} e per resto  \num{4}. La seconda riga ha per $a$ il precedente valore di $b$ e per $b$ il valore di $r$. Divido  \num{12} per \num{4}. Ottengo come quoziente  \num{3} e per resto  \num{0}. Essendo il resto uguale a zero, $\mcd(40;12)=4$.
@@ -272,7 +272,7 @@ $a$&$b$&$a/b$&$r$\\
       	   	12&4&3&0
           \end{array} 
           \]
-       \begin{esempiot}{}{}
+       \begin{esempiot}{MCD}{}
     Calcoliamo il $\mcd$ fra \num{85} e \num{26}. 
        \end{esempiot}
     Dopo qualche passaggio otteniamo che il resto è zero quando $b=1$, quindi $\mcd(\num{85};\num{26})=1$. I numeri sono primi fra di loro\index{Numeri!primi fra loro}. 
@@ -286,7 +286,7 @@ $a$&$b$&$a/b$&$r$\\
    	   	2&1&2&0
    	    \end{array} 
    	     \]
-\begin{esempiot}{}{}
+\begin{esempiot}{MCD}{}
 Calcoliamo il $\mcd$ fra \numlist{128;75}. 
    \end{esempiot}
 Imposto la tabella
@@ -318,7 +318,7 @@ Imposto la tabella
    	        	\caption[]{Scomposizione di \numlist{128;75}}
    	        	\label{fig:scomposizione12875}
    	        \end{figure}
-\begin{esempiot}{}{}
+\begin{esempiot}{Metodo di Euclide}{}
 Utilizziamo il metodo di Euclide\index{mcd!Euclide} per calcolare il $\mcd$ tra \numlist{60;32;50}. 
 \end{esempiot}
 Il procedimento è il seguente prima trovo il $\mcd$ tra \numlist{60;32} e poi cerco il $\mcd$ fra il $\mcd$ trovato e \num{50}.
@@ -369,8 +369,8 @@ Imposto la tabella
     	\caption[]{Scomposizione di \numlist{120;80;45}}  
     	\label{fig:AlberoBinario5}
     \end{figure}
-  \begin{esempiot}{}{}
-   Calcoliamo il stesso $\mcm$ con il metodo delle scomposizioni. 
+  \begin{esempiot}{mcm}{}
+   Calcoliamo lo stesso $\mcm$ con il metodo delle scomposizioni. 
    \end{esempiot}
      	    Dalla tabella\nobs\vref{fig:scomposizione12875} abbiamo le seguenti scomposizioni allineate:
      	     \[
@@ -383,7 +383,7 @@ Imposto la tabella
      	        \[\mcm{128;75}=2^7\cdot 3\cdot 5^2=9600\] 
 
   Un altro modo per trovare il $\mcm$ di due numeri è utilizzare la seguente formula\[ \mcm(a,b )=\dfrac{a\cdot b}{\mcd(a,b)}\]
-  \begin{esempiot}{}{}
+  \begin{esempiot}{mcm}{}
   Calcoliamo il $\mcm$ fra \numlist{128;76}. 
     \end{esempiot}
   Iniziamo a calcolare il $\mcd$ con il metodo di Euclide\index{mcd!Euclide}.
@@ -401,7 +401,7 @@ Imposto la tabella
      	\[ \mcm(128,76 )=\dfrac{128\cdot 76}{4}=2432\]
 
   Il $\mcm$ è una operazione per cui vale la proprietà associativa quindi\[\mcm(a,b,c)=\mcm(\mcm(a,b),c) \] quindi posso sostituire a due temini il loro minimo comune multiplo.
-  \begin{esempiot}{}{}
+  \begin{esempiot}{mcm}{}
   Calcoliamo il minimo comune multiplo fra \numlist{45;78;48}. 
     \end{esempiot}
   Iniziamo a calcolare il massimo comun divisore fra \numlist{45;78} con il metodo di Euclide\index{mcd!Euclide}.

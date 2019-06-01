@@ -1,7 +1,20 @@
-\documentclass[preview=true]{standalone}
-\input{../Mod_base/grafica}
-\input{../Mod_base/base}
-\input{impostazioni/impostazioniTikz}
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,positioning,calc}
+\pagestyle{empty}
+\usepackage[T1]{fontenc} % font encoding
+\usepackage[utf8]{inputenc} % input encoding
+%\usepackage{noto}
+\usepackage[largesc]{newtxtext} %
+\usepackage[varqu,varl]{zi4}% inconsolata
+\usepackage{cabin}% sans serif
+\usepackage[vvarbb]{newtxmath}
+\useosf % use oldstyle figures except in math
+
+%\input{impostazioni/impostazioniTikz}
+\input{impostazioniTikz}
 \begin{document}
   \begin{tikzpicture}
     \node[main node] (1) {Un'equazione di secondo grado};
