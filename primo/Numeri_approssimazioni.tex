@@ -1,0 +1,46 @@
+\chapter{Approssimazione, arrotondamento e troncamento}
+\label{cha:Approssimazione}
+\section{Approssimazioni per difetto e per eccesso}
+Un'approssimazione è la rappresentazione non precisa di una quantità. Un'approssimazione  può essere o per eccesso\index{Approssimazione!per eccesso}\index{Approssimazione!per difetto} o per difetto. Indicando con  $q$ è la quantità e $a$ e l'approssimazione avremo che:
+se\[a<q\] l'approssimazione è per difetto altrimenti se \[a>q\] per eccesso.
+  \begin{esempiot}{Approssimazioni}{}
+	Consideriamo il numero\[q=\num{5,3278432}\]
+\end{esempiot}
+\begin{align*}
+	a=&\num{5}\\
+	a=&\num{5,3}\\
+	a=&\num{5,32}\\
+	a=&\num{5,327}\\
+\end{align*}
+Sono tutte approssimazioni per difetto di q.
+\begin{align*}
+	a=&\num{6}\\
+	a=&\num{5,4}\\
+	a=&\num{5,34}\\
+	a=&\num{5,328}\\
+\end{align*}
+Sono tutte approssimazioni per eccesso di q.
+\section{Troncamento}\index{Troncamento}
+Un troncamento di un numero decimale è riscrivere un numero eliminando le cifre di un numero decimale da una posizione scelta in poi. 
+  \begin{esempiot}{Troncamento}{}
+	Consideriamo il numero\[q=\num{5.689547155}\]
+	il suo troncamento dalla terza cifra decimale è:
+	\[q=\num{5.689}\]
+\end{esempiot}
+  \begin{esempiot}{Troncamento}{}
+	Consideriamo il numero\[q=\num{8.45698202124}\]
+	il suo troncamento dalla quinta cifra decimale è:
+	\[q=\num{8.45698}\]
+\end{esempiot}
+\section{Arrotondamenti}\index{Arrotondamenti}
+Come si decide se approssimare per difetto o per eccesso? Si utilizza il metodo di arrotondamento. Utilizziamo la seguente regola se vogliamo arrotondare un numero a una certa posizione decimale se la successiva cifra è \num{0}, \num{1}, \num{2}, \num{3}, \num{4} si tronca alla posizione. Se la successiva cifra è \num{5}, \num{6}, \num{7}, \num{8}, \num{9}. Si aumenta di uno.
+  \begin{esempiot}{Arrotondamento}{}
+	Consideriamo il numero\[q=\num{8.45698202124}\]
+	arrotondando dalla terza cifra decimale è:
+	\[q=\num{8.457}\] visto che la quarta cifra decimale è \num{9}
+\end{esempiot}
+  \begin{esempiot}{Arrotondamento}{}
+	Consideriamo il numero\[q=\num{8.45698202124}\]
+	arrotondando dalla terza cifra decimale è:
+	\[q=\num{8.45698}\] visto che la quarta cifra decimale è \num{2}
+\end{esempiot}
