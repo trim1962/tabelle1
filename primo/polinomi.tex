@@ -7,7 +7,7 @@ La somma fra polinomi\index{Polinomi!somma} si ottiene sommando, se vi sono, i m
 Supponiamo di voler sommare\[ 3a+2b^2+4a-6b^2+2b\] 
 \end{esempiot}
 procediamo come segue:
-	 \begin{NodesList} %[margin=-3cm]
+	 \begin{NodesList} [dy=3pt]%[margin=-3cm]
 	 	\begin{align*}
 	 		3a+2b^2+4a-6b^2+2b&                           \AddNode\\
 	 		(3+4)a+(2-6)b^2+2b&          \AddNode\\                                       		
@@ -26,11 +26,11 @@ Il caso più semplice è il prodotto di un monomio per un binomio. Il monomio fu
 \begin{center}
 \includestandalone{primo/polinomi/monomioperpolinomio}
 \end{center}
-\begin{esempiot}{}{}
+\begin{esempiot}{Moltiplicazione}{}
 Semplificare \[3(2a-5b)-7a(2a+3b)+5(a^2+3b)\]
 \end{esempiot}
 In questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. A destra si vedono i risultati parziali  che poi sommati, danno il risultato finale.
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		\overbrace{3(2a-5b)}^{1}-\overbrace{7a(2a+3b)}^{2}+\overbrace{5(a^2+3b)}^{3}&\AddNode[1]\AddNode[2]\\
 		6a+&\AddNode[1]&\tag{1}\\ 
@@ -59,7 +59,7 @@ Semplificare \[2a(3a-6)-(6a^2-2b)-3a(a-2b)\]
 \end{esempiot}
 Anche in questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. Nel secondo prodotto si nota il segno meno fuori della parentesi tonda che in pratica cambierà il segno dei termini all'interno della parentesi. A destra abbiamo  i risultati parziali delle tre moltiplicazioni.
 % % % % % % % %
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 \overbrace{2a(3a-6)}^{1}-\overbrace{(6a^2-2b)}^{2}-\overbrace{3a(a-2b)}^{3}&\AddNode[1]\AddNode[2]\\ %
 		6a^2+&\AddNode[1]&\tag{1}\\%
@@ -88,11 +88,11 @@ In questo caso il polinomio nella prima parentesi moltiplica il polinomio della 
 \begin{center}
 \includestandalone{primo/polinomi/polinomioperpolinomio}
 \end{center}
-\begin{esempiot}{}{}
+\begin{esempiot}{Moltiplicazione}{}
 Semplificare \[(xy-2)[(xy-2)xy+4+2xy]-(xy-2)(x^2y^2+2xy+4)\]
 \end{esempiot}
 In questo esempio abbiamo quattro moltiplicazioni  fra vari polinomi. A complicare le cose vi sono le regole di precedenza. A destra i vari risultati parziali. Si procede seguendo l'ordine indicato sopra l'espressione. 
-	\begin{NodesList}
+	\begin{NodesList}[dy=3pt]
 		\begin{align*}
 			\overbrace{(xy-2)\overbrace{[\underbrace{(xy-2)xy}_{1}+4+2xy]}^{2}}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[1]\AddNode[2]\\
 			x^2y^2&\AddNode[1]\\ 
@@ -130,11 +130,11 @@ In questo esempio abbiamo quattro moltiplicazioni  fra vari polinomi. A complica
 		\LinkNodes[margin=0cm]{$(-1)\cdot (-2)\cdot 4$}%
 		\LinkNodes[margin=0cm]{Sommando}%
 	\end{NodesList}
-\begin{esempiot}{}{}
+\begin{esempiot}{Moltiplicazione}{}
 Semplificare \[(3a-2b)(2a-b)+(2a^2-2)(2-a)\]
 \end{esempiot}
  In questo esempio abbiamo due moltiplicazioni di un binomio per un binomio. A destra i passaggi parziali. Infine sommiamo  gli elementi simili e otteniamo la soluzione.
- \begin{NodesList} % % % % % % % % % % % % % % % %
+ \begin{NodesList}[dy=3pt] % % % % % % % % % % % % % % % %
  	\begin{align*}
  		\overbrace{(3a-2b)(2a-b)}^{1}+\overbrace{(2a^2-2)(2-a)}^{2}&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\ %
  		6a^2&\AddNode[1]&\tag{1}\\ % 
@@ -172,7 +172,7 @@ Calcolare il quadrato del binomio \[\left(a+2b\right)^2 \]
 \end{esempiot}
 procediamo come segue:
 %\begin{figure}
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		\left(a+2b\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
 		+a^2&\AddNode[1]&\\ 
@@ -191,7 +191,7 @@ Calcolare il quadrato di \[ \left(2x-3y\right)^2\]
 \end{esempiot}
 procediamo come segue:
 %\begin{figure}
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		\left(2x-3y\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
 		+4x^2&\AddNode[1]&\\ 
@@ -209,7 +209,7 @@ procediamo come segue:
 Supponiamo di voler calcolare il quadrato di \[\left(2-z\right)^2\]
 \end{esempiot}
 %\begin{figure}
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		\left(2-z\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
 		+4&\AddNode[1]&\\ 
@@ -227,7 +227,7 @@ Supponiamo di voler calcolare il quadrato di \[\left(2-z\right)^2\]
 Calcolare il quadrato di \[\left(1-\dfrac{1}{2}z\right)^2\]
 \end{esempiot}
 %\begin{figure}
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		\left(1-\dfrac{1}{2}z\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
 		+1&\AddNode[1]&\\ 
@@ -251,7 +251,7 @@ In questo caso il prodotto\index{Differenza!quadrati} è fra due binomi in cui u
 Calcolare \[(2x-3y)(2x+3y)\]
 \end{esempiot}
 procediamo come segue
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		(2x-3y)(2x+3y)&\AddNode[1]\AddNode[2]\AddNode[3]\\
 		+4x^2&\AddNode[1]&\\ 
@@ -269,7 +269,7 @@ procediamo come segue
 Calcolare \[(-4a-b)(-4a+b)\]
 \end{esempiot}
 L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia, procediamo come segue
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		(-4a-b)(-4a+b)&\AddNode[1]\AddNode[2]\AddNode[3]\\
 		+16a^2&\AddNode[1]&\\ 
@@ -287,7 +287,7 @@ L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine 
 Calcolare \[(a+b+c)(a+b+c)\]
 \end{esempiot}
 L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia solo che qui non è un monomio ma un binomio, procediamo come segue:
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		(a+b+c)(a-b-c)&\AddNode[1]\AddNode[2]\AddNode[3]\\
 		[a+(b+c)][a-(b+c)]&\AddNode[1]&\\ 
@@ -310,7 +310,7 @@ Un altro prodotto notevole è il cubo del binomio\index{Cubo!binomio}. Si calcol
 Calcolare \[(a-3b)^3\]
 \end{esempiot}
 procediamo come segue:
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 		(a-3b)^3&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\AddNode[5]\\
 		a^3&\AddNode[1]&\\ 
@@ -335,7 +335,7 @@ Il quadrato del trinomio si calcola utilizzando la regola\[(A+B+c)=A^2+B^2+C^2+2
 Calcolare \[(a+2b-3c)^2\]
 \end{esempiot}
 procediamo come segue:
-\begin{NodesList}
+\begin{NodesList}[dy=3pt]
 	\begin{align*}
 (a+2b-3c)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\AddNode[5]\AddNode[6]\AddNode[7]\\
 		a^2&\AddNode[1]&\\ 

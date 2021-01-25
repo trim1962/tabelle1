@@ -27,6 +27,10 @@ x\div(x+y)&\\
 \begin{definizionet}{Forma normale monomio}{}
 Un monomio è  in forma normale se è formato da un solo numero che chiameremo parte numerica e dal prodotto di potenze con basi letterali che compaiono una sola volta, la parte letterale.
 \end{definizionet}\index{Monomio!Forma!normale}\index{Monomio!parte!numerica}\index{Monomio!parte!letterale}
+\begin{osservazionet}{Numeri nascosti}{}
+	Le convenzioni tipografiche portano a nascondere o celare dele quantità numeriche. Prendiamo il semplice monomio \[x\]Questa semplice scrittura sottintende un segno e tre numeri infatti
+	\[x=+\dfrac{1}{1}x^1\] 
+\end{osservazionet}
 \begin{esempiot}{Forma normale}{}
 	I seguenti monomi sono in forma normale
 \end{esempiot}
@@ -63,7 +67,7 @@ Un monomio è  in forma normale se è formato da un solo numero che chiameremo p
 \begin{definizionet}{Monomi simili}{}
 	Due monomi sono simili se hanno la stessa parte letterale
 \end{definizionet}\index{Monomio!simile}
-Il concetto di similitudine è usato normalmente nella vita quotidiana. Una penna è simile a un'altra penna. Una matita non è simile a un pennarello, una mela è simile ad una mela ma non è simile ad un peperone. Il nostro cervello naturalmente classifica gli oggetti che ci circondano e questo ci permette d'interagire   con loro. Se cerco della frutta dolce prendo un mandarino e non un limone, infatti un limone non è simile a un mandarino.  
+Il concetto di similitudine è usato normalmente nella vita quotidiana. Una penna è simile a un'altra penna. Una matita non è simile a un pennarello, una mela è simile a una mela ma non è simile a un peperone. Il nostro cervello naturalmente classifica gli oggetti che ci circondano e questo ci permette d'interagire   con loro. Se cerco della frutta dolce prendo un mandarino e non un limone, infatti un limone non è simile a un mandarino.  
 \begin{esempiot}{Monomi simili}{}
 	I seguenti monomi sono simili a coppie.
 \end{esempiot}
@@ -99,7 +103,127 @@ Il grado di un monomio rispetto a una lettera è l'esponente con cui appare ques
 \[3a^3b^2c^4d\] Per la $a$, questo monomio è di terzo grado , di secondo per la $b$, quarto per $c$, primo per $d$, zero per $e$
 \section{Operazioni}
 \subsection{Somma}
-\begin{definizionet}{Somma}{}
+\begin{definizionet}{Somma monomi}{}
 La somma fra monomi simili, è un monomio che ha per somma la somma algebrica delle parti numeriche e per parte letterale la stessa parte letterale.  
-\end{definizionet}
+\end{definizionet}\index{Monomio!somma}
 La somma di due oggetti simili è un oggetto simile. Aggiungendo tre cacciaviti ad altri cinque  otteniamo otto cacciativi non otto martelli.
+\begin{esempiot}{Somma}{}
+	\begin{align*}
+		3a+5a=&8a\\
+		-3ab+4ab=&ab
+		-2m+2m=&0\\
+	\end{align*}
+\end{esempiot}
+\begin{definizionet}{Prodotto monomi}
+	Il prodotto di due monomi è un monomio che ha per parte numerica il prodotto delle parti numeriche e per parte letterale il prodotto delle parti letterali. Nella somma di due monomi non cambia perciò la parte letterale
+\end{definizionet}\index{Monomio!prodotto}
+\begin{osservazionet}{Regola pratica}{}
+Nel prodotto di due monomi bisogna rispondere a tre domande
+\begin{enumerate}
+	\item Che segno ottengo?
+	\item Che numero ottengo?
+	\item Che parte letterale avrò?
+\end{enumerate}
+\end{osservazionet}
+\begin{esempiot}{Prodotto di monomi}{}
+	Calcolare \[3ab\cdot(-5abc)\]
+\end{esempiot}
+Ecco come risolvere l'esercizio. Dopo aver risposto alle tre domande otteniamo la soluzione. Attenzione alla parentesi che è obbligatoria.
+\begin{NodesList}[dy=3pt]
+	\begin{align*}
+		3ab\cdot(-5abc)&\AddNode\\ %  
+		+\cdot -=-&\AddNode\\
+		3\cdot 5=&15\AddNode\\
+		ab\cdot abc=&a^2b^2c\AddNode\\
+		3ab\cdot(-5abc)=&-15a^2b^2c\AddNode
+	\end{align*}
+	\tikzset{LabelStyle/.style ={left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{Segno}%1    
+	\LinkNodes[margin=2cm]{Numero}%2
+	\LinkNodes[margin=2cm]{Lettere}%3
+	\LinkNodes[margin=2cm]{Risultato}%4
+\end{NodesList}
+\begin{esempiot}{Prodotto di monomi}{}
+	Calcolare \[3ab\cdot(-5abc)\]
+\end{esempiot}
+Ecco come risolvere l'esercizio. Dopo aver risposto alle tre domande otteniamo la soluzione. Qui la parentesi è inutile. Attenzione al numero nascosto.
+\begin{NodesList}[dy=3pt]
+	\begin{align*}
+		-x^2yz\cdot 2xy^2&\AddNode\\ %  
+		+\cdot -=-&\AddNode\\
+		1\cdot 2=&2\AddNode\\
+		x^2yz\cdot xy^2=&x^3y^3z\AddNode\\
+		-x^2yz\cdot 2xy^2=&-2x^3y^3z\AddNode
+	\end{align*}
+	\tikzset{LabelStyle/.style ={left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{Segno}%1    
+	\LinkNodes[margin=2cm]{Numero}%2
+	\LinkNodes[margin=2cm]{Lettere}%3
+	\LinkNodes[margin=2cm]{Risultato}%4
+\end{NodesList}
+\subsection{Divisione}
+Prima di procedere con le definizioni ricordiamo le proprietà delle potenze. Alla moltiplicazione di basi uguali corrisponde la somma degli esponenti. Alla divisione di basi uguali segue la sottrazione fra gli esponenti. Facciamo due esempi:
+\begin{align*}
+	a^{6}\div a^4=&a^2\\
+	a^4\div a^6= &a^{-2}
+\end{align*}
+Nel primo caso il risultato è un monomio nel secondo caso no infatti:
+\[a^4\div a^6=\dfrac{a^4}{a^6}=\dfrac{a\cdot a\cdot a\cdot a}{a\cdot a\cdot a\cdot a\cdot a\cdot a}=\dfrac{1}{a\cdot a}=\dfrac{1}{a^2}\]
+Che non è un monomio.
+\begin{definizionet}{Divisione monomi}{}
+La divisione fra due monomi non è sempre definita. La divisione fra monomi è un monomio se la differenza fra gli esponenti delle basi è positiva o nulla. 
+\end{definizionet}
+\begin{esempiot}{Divisioni monomi}{}
+	Eseguire la divisione:
+	\[ 3x^2y^3\div 4xy^2\]
+\end{esempiot}
+\begin{align*}
+3x^2y^3\div 4xy^2=&\\
+&=\dfrac{3}{4}x^{2-1}y^{3-2}\\
+&=\dfrac{3}{4}x^{1}y^{1}\\
+&=\dfrac{3}{4}xy\\
+\end{align*}
+E se manca una lettera?
+\begin{esempiot}{Divisioni monomi}{}
+	Eseguire la divisione:
+	\[ -5x^4y^2z\div 10x^3y\]
+\end{esempiot}
+\begin{align*}
+	-5x^6y^2z\div 10x^3y=&\\
+	&=-5x^6y^2z^1\div 10x^3yz^0\\
+	&=-\dfrac{5}{10}x^{6-3}y^{2-1}z^{1-0}\\
+	&=-\dfrac{5}{10}x^{3}y^{1}z^{1}\\
+	&=-\dfrac{1}{2}x^{3}yz\\
+\end{align*}
+Scompaiono le lettere, che succede
+\begin{esempiot}{Divisioni monomi}{}
+	Eseguire la divisione:
+	\[ 6x^3y^2\div 3 x^3y\]
+\end{esempiot}
+\begin{align*}
+	6x^3y^2\div 3 x^3y=&\\
+	&=\dfrac{6}{3}x^{3-3}y^{2-1}\\
+	&=2x^{0}y^{1}\\
+	&=2\cdot 1\cdot y^{1}\\
+	&=2y\\
+\end{align*}
+La trappola delle frazioni.
+\begin{esempiot}{Divisioni monomi}{}
+	Bisogna stare attenti quando nella divisione  si hanno delle frazioni 
+	\[ \dfrac{3}{5}a^4b^2\div\dfrac{2}{7}a^2b\]
+\end{esempiot}
+Procedimento corretto:
+\begin{align*}
+	\dfrac{3}{5}a^4b^2\div\dfrac{2}{7}a^2b=&\\
+	&=\dfrac{3}{5}\cdot\dfrac{7}{2}a^{4-2}b^{2-1}\\
+	&=\dfrac{21}{10}a^{2}b^{1}\\
+	&=\dfrac{21}{10}a^{2}b\\
+\end{align*}
+Procedimento sbagliato:
+\begin{align*}
+	\dfrac{3}{5}a^4b^2\div\dfrac{2}{7}a^2b=&\\
+	&=\dfrac{3}{5}\cdot\dfrac{7}{2}a^4b^2a^2b\\
+	&=\dfrac{21}{10}a^{4+2}b^{2+1}\\
+	&=\dfrac{21}{10}a^{6}b^3\\
+\end{align*}
+L'errore è non aver diviso la parte numerica contemporaneamente alla parte letterale.
