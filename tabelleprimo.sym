@@ -1,0 +1,66 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{circag}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{appartienes}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{coniugatos}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{divs}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossentry{esistes}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{J}\relax \glsresetentrylist %
+\glossentry{uniimgs}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{maggiores}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{maggioreuguas}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{maggioreugua2s}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{umenopius}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossentry{nonappartienes}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{pinonesistes}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numnas}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numints}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numintns}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numintps}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numrazios}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numrazions}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numraziops}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numreals}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numrealns}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numrealps}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\glossentry{numcomps}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{piumenos}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{Q}\relax \glsresetentrylist %
+\glossentry{qualunques}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}\glsgroupskip
+\glsgroupheading{U}\relax \glsresetentrylist %
+\glossentry{uguaglianzas}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{84}}}%
+\end{theglossary}\glossarypostamble
