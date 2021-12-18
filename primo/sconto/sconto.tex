@@ -1,0 +1,14 @@
+\documentclass[10pt,a4paper]{standalone}
+\usepackage{eurosym}
+\usepackage{tikz}
+\begin{document}
+	\begin{tikzpicture}
+	\tikzstyle{etichetta}=[minimum width=4cm,minimum height=2cm,
+	rectangle,draw,
+	fill=yellow!75]
+	\node [etichetta]at (1,1){};
+	\node [above,font=\bfseries] at (1,1) { Prezzo 600 \mbox{\euro}};
+	\node [below,font=\bfseries] at (1,1) {Prezzo scontato 340 \mbox{\euro}};
+	\draw[very thick,red](-.2,1.2)--(2.1,1.2);	
+\end{tikzpicture}
+\end{document}
