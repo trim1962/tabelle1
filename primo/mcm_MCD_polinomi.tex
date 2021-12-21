@@ -374,10 +374,10 @@ Il primo lo fattorizzo con un raccoglimento totale, il secondo è un quadrato, l
 tondo/.style={draw,notondo},
 linea/.style={very thick},
 freccia/.style={-triangle 90,linea},
-etichetta/.style={tondo,node distance = 2cm,align=center}};
-\tikzstyle{noetichetta}=[];
-\tikzset{freccialta/.style={freccia,bend left=45}};
-\tikzset{frecciabassa/.style={freccia,bend right=45}};
+etichetta/.style={tondo,node distance = 2cm,align=center},
+noetichetta/.style={},
+freccialta/.style={freccia,bend left=45},
+frecciabassa/.style={freccia,bend right=45}};
 \node [tondo] (p1)  {$x^2$};
 \node [notondo,right of=p1] (p2)  {};
 \node [notondo,right of=p2,node distance=0.5cm] (p3)  {$(x-2)$};
