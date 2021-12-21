@@ -333,14 +333,14 @@ Abbiamo trasformato le due somme in prodotti di fattori. I fattori in questo cas
  i tre polinomi sono somme di addendi quindi 
 \begin{center}
 \begin{tikzpicture}
-\tikzset{notondo/.style={ellipse}};
-\tikzset{tondo/.style={draw,notondo}};
-\tikzset{linea/.style={very thick}};
-\tikzset{freccia/.style={-triangle 90,linea}};
-\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
-\tikzstyle{noetichetta}=[];
-\tikzset{freccialta/.style={freccia,bend left=45}};
-\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\tikzset{notondo/.style={ellipse},
+	tondo/.style={draw,notondo},
+	linea/.style={very thick},
+	freccia/.style={-triangle 90,linea},
+	etichetta/.style={tondo,node distance = 2cm,align=center},
+	noetichetta/.style={},
+	freccialta/.style={freccia,bend left=45},
+	frecciabassa/.style={freccia,bend right=45}};
 \node [notondo] (p1)  {$x^2$};
 \node [notondo,right of=p1] (p2)  {$-$};
 \node [notondo,right of=p2] (p3)  {$2x$};
